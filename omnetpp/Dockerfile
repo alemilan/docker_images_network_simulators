@@ -56,6 +56,5 @@ RUN /bin/bash -c "source setenv; make makefiles"
 RUN make
 
 WORKDIR /workspace/simu5g/simu5g
-#RUN ["chmod", "+x", "setenv"]
 RUN /bin/sh -c "source setenv; make makefiles"
 RUN make
